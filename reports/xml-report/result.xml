@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite id="1" tests="1" failures="1" package="/Users/testinium/IdeaProjects/WebHepsiburadaProject/specs/deneme.spec" time="68.058" timestamp="2020-01-13T16:48:00" name="Example Spec" errors="0" hostname="testiniums-MacBook-Pro.local">
+		<properties></properties>
+		<testcase classname="Example Spec" name="Seneryo 1" time="68.058">
+			<failure message="Ürün detay ekranından &#34;btn_detayProductName&#34; isim &#34;tb_price&#34; &#34;tb_priceKuruş&#34; &#34;tb_tl&#34;fiyat kontrolü yapılır&#xA;Step Execution Failure: &#39;org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@class=&#34;price merchant&#34;]/span[@data-bind=&#34;markupText:&#39;currentPriceBeforePoint&#39;&#34;] (tried for 30 second(s) with 500 milliseconds interval)&#39;" type="Ürün detay ekranından &#34;btn_detayProductName&#34; isim &#34;tb_price&#34; &#34;tb_priceKuruş&#34; &#34;tb_tl&#34;fiyat kontrolü yapılır&#xA;Step Execution Failure: &#39;org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@class=&#34;price merchant&#34;]/span[@data-bind=&#34;markupText:&#39;currentPriceBeforePoint&#39;&#34;] (tried for 30 second(s) with 500 milliseconds interval)&#39;">org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#xA;org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#xA;org.example.StepImplementation.findElementByKey(StepImplementation.java:50)&#xA;org.example.StepImplementation.csvProductChech(StepImplementation.java:220)&#xA;</failure>
+		</testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,86 @@
+
+# HomePage den LoginPage yönel
+* Elementi bekle "btn_GirisYap_MainPage"
+* Elementin üstünde bekle "btn_GirisYap_MainPage"
+* Elementi tıkla "btn_GirisYap"
+
+# <username> ve <password> ile login ol
+* Değer yazılır <username> to element "tb_UserName"
+* Değer yazılır <password> to element "tb_Password"
+* Elementi tıkla "btn_Login"
+
+# <kullaniciAdi> başarılı login kontrol
+* Elementi bekle "tb_loginUser"
+* Elementin "tb_loginUser" Text'leri <kullaniciAdi> kontrol et
+
+
+# random kategori tıklanır <key>
+* "cartCount" Eğer sepet doluysa boşaltılır  "btn_cartDelete" "btn_homePageHome" "btn_homePage2"
+//* Elementi tıkla "btn_homePage2"
+* Elementi bekle <key>
+* <key> random tıklanır
+
+
+# random alt kategori tıklanır <key>
+* <key> random tıklanır
+
+# random marka tılanır <key>
+* <key> random tıklanır
+
+# <priceMin> - <priceMax> fiyat aralığında ürün listelenir
+* Değer yazılır <priceMin> to element "minPrice"
+* Değer yazılır <priceMax> to element "maxPrice"
+* Elementi tıkla "btn_priceList"
+
+# Ürün sepete eklenir, gerekli doğruluklar kontrol edilir, sepete gidilir
+
+//* Elementin "cartCount" değerini tut   //burada istediğim sayıyı sepet boşken alıp ürün sepete eklendikten sonra kontrol etmek
+* Elementin "cartCount" Text'leri "0" kontrol et
+// yukarıda 0 şeklinde değil elemenrin değeri tutulur şeklinde aldığım değerin 1 fazlası ile kontrol etmek fakat value cinsinden alamadım
+* Elementi tıkla "addCart"
+* Elementin "cartCount" Text'leri "1" kontrol et
+* Elementi tıkla "btn_shoppingCart"
+
+# Ürün yeni adres bilgileri girilir ve ilerlenir
+
+* Elementi tıkla "btn_newAddress"
+* Değer yazılır "deneme" to element "tb_fistName"
+* Değer yazılır "test" to element "tb_lastName"
+* Elementi tıkla "clickCity"
+* Elementi tıkla "cmb_selectCity"
+* Elementi tıkla "clickTown"
+* Elementi tıkla "cmb_selectCounty"
+* Elementi tıkla "clickDistrict"
+* Elementi tıkla "cmb_selectDistrict"
+
+
+//* Değer "İstanbul" seçilir to elementt "cmb_selectCity"
+//* Değer "KADIKÖY" seçilir to element "cmb_selectCounty"
+//* Değer "ACIBADEM" seçilir to element "cmb_selectDistrict"
+* Değer yazılır "deneme mah. deneme sok. deneme " to element "tb_address"
+* Değer yazılır "deneme apt." to element "tb_addressName"
+* Değer yazılır "5551234567" to element "tb_phoneNum"
+* Elementi tıkla "btn_saveAddress"
+* Elementi tıkla "btn_goOn"
+
+# Ürün ödeme tipi kredi kartı seçilir, kredi kartı bilgileri girilir ve anasayfaya dönülür
+* Wait "1" seconds
+* Elementi tıkla "btn_creditCard"
+* Değer yazılır "2344987634215789" to element "tb_cardNum"
+* Değer yazılır "deneme test" to element "tb_cardName"
+* Değer "02" seçilir to element "cmb_sktMonth"
+* Değer "2022" seçilir to element "cmb_sktYear"
+* Değer yazılır "321" to element "tb_cvcNum"
+* Elementi tıkla "btn_homepage"
+* Elementi tıkla "btn_homePage2"
+
+
+# Adreslerim alanına gidilir, eklenen adresler silinir ve test sonlandırılır
+
+* Elementin üstünde bekle "btn_GirisYap_MainPage"
+* Elementi tıkla "btn_myAccount"
+* Elementi bekle "btn_myAccountPage"
+* Elementi tıkla "btn_myAccountPage"
+* Elementi tıkla "btn_accountDelete"
+
+

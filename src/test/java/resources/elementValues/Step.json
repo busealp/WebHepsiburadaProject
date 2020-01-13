@@ -1,0 +1,298 @@
+[
+{
+  "key": "btn_GirisYap_MainPage",
+  "value": "//*[@id='myAccount']",
+  "type": "xpath"
+},
+
+{
+"key": "btn_GirisYap",
+"value": "//a[@id='login']",
+"type": "xpath"
+},
+{
+"key": "tb_UserName",
+"value": "//*[@id='email']",
+"type": "xpath"
+},
+{
+"key": "tb_Password",
+"value": "//*[@id='password']",
+"type": "xpath"
+},
+{
+"key": "btn_Login",
+"value": "//*[@class='btn full btn-login-submit']",
+"type": "xpath"
+},
+{
+"key": "tb_loginUser",
+"value": "//a[@class='login user-name']",
+"type": "xpath"
+},
+
+
+//homePage
+  {
+    "key": "tb_BasketCount",
+    "value": "//*[@id='cartItemCount']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_categori",
+    "value": "//*[@class='menu browser-by-category']/li[@id]",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_altCategori",
+    "value": "//div/ul/ul/li/a",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_brand",
+    "value": "//*[@class='show-all-brands scrollable-filter-container scroll-lock']/li",
+    "type": "xpath"
+  },
+  {
+    "key": "minPrice",
+    "value": "//input[contains(@placeholder,'En az')]",
+    "type": "xpath"
+  },
+  {
+    "key": "maxPrice",
+    "value": "//input[contains(@placeholder,'En çok')]",
+    "type": "xpath"
+  },
+
+  {
+    "key": "btn_priceList",
+    "value": "//*[@class='range-contain-row right']/button",
+    "type": "xpath"
+  },
+
+  {
+    "key": "btn_Product",
+    "value": "//*[@class='search-item col lg-1 md-1 sm-1  custom-hover not-fashion-flex']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_ProductName",
+    "value": "//*[@class='search-item col lg-1 md-1 sm-1  custom-hover not-fashion-flex']//p/span",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_ProductPrice",
+    "value": "//*[@class='search-item col lg-1 md-1 sm-1  custom-hover not-fashion-flex']//div/span[@class='price product-price']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_detayProductName",
+    "value": "//*[@id=\"product-name\"]",
+    "type": "xpath"
+  },
+
+  {
+    "key": "tb_tl",
+    "value": "//*[@class='price merchant']/span[@class='turkishLira']",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_price",
+    "value": "//*[@class=\"price merchant\"]/span[@data-bind=\"markupText:'currentPriceBeforePoint'\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_priceKuruş",
+    "value": "//*[@class=\"price merchant\"]/span[@data-bind=\"markupText:'currentPriceAfterPoint'\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "cartCount",
+    "value": "//*[@id='cartItemCount']/*",
+    "type": "xpath"
+  },
+  {
+    "key": "addCart",
+    "value": "//*[@class='addToCartButton']",
+    "type": "xpath"
+  },
+
+
+  {
+    "key": "btn_shoppingCart",
+    "value": "//*[@id='shoppingCart']",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_cartPrice",
+    "value": "//*[@class='price']/span",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_cartAddProduct",
+    "value": "//*[@class='increase']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_completeShopping",
+    "value": "button.btn.btn-primary.full",
+    "type": "css"
+  },
+  {
+    "key": "btn_shippingPrice",
+    "value": "//*[@class='total-price']/*",
+    "type": "xpath"
+  },
+
+  // teslimat bilgileri
+
+  //*[@class='col delivery-addresses']/div/a
+  {
+    "key": "btn_newAddress",
+    "value": " //*[@class='col delivery-addresses']/div/a",
+    "type": "xpath"
+  },
+  //*[@id='first-name']
+
+  {
+    "key": "btn_newAddress",
+    "value": " //*[@class='col delivery-addresses']/div/a",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_fistName",
+    "value": "first-name",
+    "type": "id"
+  },
+  {
+    "key": "tb_lastName",
+    "value": "last-name",
+    "type": "id"
+  },
+  {
+    "key": "clickCity",
+    "value": "select[id='city'] + div button",
+    "type": "css"
+  },
+  //select[id='city'] + div button,
+  {
+    "key": "cmb_selectCity",
+    "value": "//select[@id='city']/following-sibling::div//div[@class='dropdown-menu open']//ul/li/a[./span[text()='İstanbul' or text()='Istanbul']]",
+    "type": "xpath"
+  },
+  {
+    "key": "clickTown",
+    "value": "select[id='town'] + div button",
+    "type": "css"
+  },
+  {
+    "key": "cmb_selectCounty",
+    "value": "//select[@id='town']/following-sibling::div//div[@class='dropdown-menu open']//ul/li/a[./span[text()='KADIKÖY']]",
+    "type": "xpath"
+  },
+  {
+    "key": "clickDistrict",
+    "value": "select[id='district'] + div button",
+    "type": "css"
+  },
+  {
+    "key": "cmb_selectDistrict",
+    "value": "//select[@id='district']/following-sibling::div//div[@class='dropdown-menu open']//ul/li/a[./span[text()='ACIBADEM']]",
+    "type": "xpath"
+  },
+
+  {
+    "key": "tb_address",
+    "value": "//*[@class='controls animateTextarea']/textarea",
+    "type": "xpath"
+  },
+
+
+  {
+    "key": "tb_addressName",
+    "value": "//*[@id='address-name']",
+    "type": "xpath"
+  },
+
+  {
+    "key": "tb_phoneNum",
+    "value": "//*[@id='phone']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_saveAddress",
+    "value": "//*[@class='btn btn-primary btn-save-shipping-address']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_goOn",
+    "value": "//*[@class='btn btn-primary full']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_creditCard",
+    "value": "//a[@class='accordion-title paymentType-1']",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_cardName",
+    "value": "//*[@class='controls']/input[@id='card-no']",
+    "type": "xpath"
+  },
+  {
+    "key": "cmb_sktMonth",
+    "value": "//*[@class='card-col controls']/select[@name='expireMonth']",
+    "type": "xpath"
+  },
+  {
+    "key": "cmb_sktYear",
+    "value": "//*[@class='card-col controls']/select[@name='expireYear']",
+    "type": "xpath"
+  },
+  {
+    "key": "tb_cvcNum",
+    "value": "//*[@id='cvc']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_homepage",
+    "value": "//*[@id='site-header']/div/a",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_homePage2",
+    "value": "//*[@class='header-global sfcontainer']/a",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_myAccount",
+    "value": "//*[@class='with-border']/a[@href='http://www.hepsiburada.com/hesabim']",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_myAccountPage",
+    "value": "//a[contains(text(),'Adreslerim')]",
+    "type": "xpath"
+  },
+
+  {
+    "key": "btn_accountDelete",
+    "value": "/*[2]/div[1]/div[1]/a[1]]",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_cartDelete",
+    "value": "//div/a[contains(text(),'Sil')]",
+    "type": "xpath"
+  },
+  {
+    "key": "btn_homePageHome",
+    "value": "//*[@class='header-global container']/a/span",
+    "type": "xpath"
+  },
+  {
+    "key": "",
+    "value": "//a[contains(text(),'Adreslerim')]",
+    "type": "xpath"
+  }
+]
